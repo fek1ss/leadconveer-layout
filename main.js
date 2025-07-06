@@ -2,6 +2,17 @@ document.addEventListener('DOMContentLoaded', function() {
 	initCustomSlider();
 });
 
+// Бургер меню
+const burger = document.getElementById('burger');
+  const nav = document.getElementById('nav');
+
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  burger.classList.toggle('open');
+});
+
+
+
 function initCustomSlider() {
 	const slider = document.querySelector('.intro__bottom');
 	let isDown = false;
