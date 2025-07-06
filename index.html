@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>leadconveer</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./assets/LOGO (3).png" alt="logo" class="logo">
+    </div>
+
+    <button class="burger" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="list" id="nav">
+      <li class="item-list">Как это работает?</li>
+      <li class="item-list">Цена</li>
+      <li class="item-list">Отзывы</li>
+      <li class="item-list">Контакты</li>
+    </ul>
+
+    <div class="links">
+      <a href="#">
+        <img src="./assets/whatsapp.png" alt="whatsapp" class="social whatsapp">
+      </a>
+      <a href="#">
+        <img src="./assets/telegram.png" alt="telegram" class="social telegram">
+      </a>
+      <a href="#" class="tel">
+        +7 495 118-32-82
+      </a>
+    </div>
+  </header>
+  <main>
+    <section class="intro">
+      <div class="intro__top">
+        <div class="intro__cta">
+          <h1 class="intro__title">
+            Лидогенерация <br> 
+            <span class="black-title">для бизнеса</span>
+          </h1>
+          <div class="intro__text_content">
+            <p class="intro__text">Покупайте только целевые лиды по фиксированной цене от 300 ₽</p>
+            <img class="intro__smile" src="./assets/Money Mouth Face.png" alt="smile image">
+          </div>
+          <button class="intro__button">ВЫБРАТЬ ПАКЕТ ЛИДОВ</button>
+        </div>
+        <div class="intro__image_wrapper">
+          <img class="intro__image" src="./assets/Maskgroup.png" alt="banner image">
+          <img class="star star_left" src="assets/Star1.png" alt="star image">
+          <img class="star star_right" src="assets/Star2.png" alt="star image">
+        </div>
+      </div>
+      <div class="carousel__container">
+        <div class="intro__bottom">
+          <button class="intro__partners"> Лидогенерация в b2b </button>
+          <button class="intro__partners">Биржа лидов</button>
+          <button class="intro__partners">Сервис по Лидгену</button>
+          <button class="intro__partners">Лиды для производства</button>
+          <button class="intro__partners">Клиенты для бизнеса</button>
+          <button class="intro__partners">Определить телефон посетителя сайта</button>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+
+  <script>
+    const burger = document.getElementById('burger');
+    const nav = document.getElementById('nav');
+
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      burger.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
