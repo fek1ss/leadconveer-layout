@@ -242,7 +242,16 @@ a {
 }
 
 .orange-title {
-  color: var(--orange-juice);
+  color: linear-gradient(
+  to right,
+  rgba(255, 102, 0, 1),
+  rgba(242, 102, 89, 1),
+  rgba(240, 97, 119, 1),
+  rgba(229, 93, 151, 1),
+  rgba(202, 70, 210, 1),
+  rgba(141, 19, 249, 1)
+);
+
   text-align: center;
 }
 
@@ -337,6 +346,8 @@ a {
 
 .prices__cards {
   display: flex;
+  justify-content: center;
+  gap: 15px;
   width: 100%;
 }
 
@@ -347,8 +358,9 @@ a {
   gap: 20px;
   width: 30vw;
   max-width: 580px;
-  min-height: 450px;
-  border: 1px solid var(--color-grey);
+  min-width: 320px;
+  min-height: 550px;
+  border: none;
   border-radius: 20px;
   background-color: var(--ligth-grey);
   padding: 30px;
@@ -367,7 +379,7 @@ a {
   height: 80%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
 .prices__text {
@@ -383,6 +395,11 @@ a {
   gap: 10px;
   font-family: var(--font-text);
   font-size: 16px;
+}
+
+.prices__item {
+  display: flex;
+  gap: 8px;
 }
 
 .bold {
@@ -401,10 +418,23 @@ a {
   text-align: center;
   border: none;
   font-family: var(--font-title);
-  font-weight: 400;
+  font-weight: 500;
   margin: 0 auto;
 }
 
+.black {
+  background-color: var(--dark-grey);
+}
+
+.btn_black {
+  background-color: var(--dark-grey);
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+}
+
+.white-text {
+  color: var(--color-white);
+}
 
 
 
@@ -493,6 +523,15 @@ a {
   .advantages__item_title h3 {
     font-size: 18px;
   }
+
+  .prices__cards {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .prices__card {
+    min-width: 350px;
+  }
 }
 
 @media (max-width: 667px) {
@@ -533,6 +572,12 @@ a {
     overflow: hidden;
     box-shadow: 1px 2px 0 2px;
   }
+
+  .prices__card {
+    width: 80%;
+  }
+
+  
 }
 
 
@@ -567,6 +612,10 @@ a {
   .advantages__wrapper {
     flex-direction: column;
     justify-content: space-around;
+  }
+
+  .prices__card {
+    width: 80%;
   }
 
 }
