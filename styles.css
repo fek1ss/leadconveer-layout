@@ -342,6 +342,9 @@ a {
 /* prices  */
 
 .prices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
@@ -357,7 +360,7 @@ a {
   margin: 20px 0;
 }
 
-.prices__description {
+.description {
     color: var(--color-grey);
     font-family: var(--font-text);
     font-weight: 400;
@@ -369,7 +372,7 @@ a {
   display: flex;
   justify-content: center;
   gap: 15px;
-  width: 100%;
+  width: 90%;
 }
 
 .prices__card {
@@ -514,7 +517,48 @@ a {
 }
 
 
+/* clients */
+.clients {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
 
+.clients__title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.clients__company {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.clients__company_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 430px;
+  height: 120px;
+  width: 25vw;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--ligth-grey);
+}
+
+.company__img {
+  max-width: 298px;
+  max-height: 71px;
+  width: 50%;
+}
 
 
 
@@ -611,6 +655,32 @@ a {
   }
 }
 
+/* iPad (альбомный режим) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	
+  .secondary__title {
+    font-size: 32px;
+  }
+
+  .advantages__wrapper {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+
+  .clients__company {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .clients__company_item {
+    width: 90%;
+  }
+}
+
+
+
+/* мобилка  */
 @media (max-width: 667px) {
 
   .list.open {
