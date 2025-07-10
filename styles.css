@@ -246,6 +246,7 @@ a {
   font-style: bold;
   font-size: 23px;
   font-family: var(--font-title);
+  text-align: center;
 }
 
 .orange-title {
@@ -503,7 +504,7 @@ a {
   width: 100%;
 }
 
-.additional__wrapper img {
+.icon {
   width: 30px;
   height: 30px;
 }
@@ -525,6 +526,7 @@ a {
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  margin: 2rem 0;
 }
 
 .clients__title {
@@ -560,6 +562,89 @@ a {
   width: 50%;
 }
 
+/* reviews  */
+
+.reviews {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  gap: 1rem;
+}
+
+.reviews__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.reviews__cards {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  gap: 10px;
+}
+
+.reviews__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  max-width: 430px;
+  min-height: 330px;
+  width: 25vw;
+  padding: 2rem 0;
+  background-color: var(--ligth-grey);
+}
+
+.reviews__wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.reviews__grades {
+  font-size: 23px;
+  font-style: bold;
+  font-weight: 700;
+}
+
+.reviews__description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+}
+
+.reviews__text {
+  width: 80%;
+}
+
+.reviews__tags {
+  color: var(--color-grey);
+}
+
+.reviews__videos {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  width: 90%;
+}
+
+.reviews__video {
+  width: 30vw;
+}
+
+.video {
+  width: 100%;
+  border-radius: 20px;
+}
+
+
 
 
 
@@ -567,7 +652,6 @@ a {
 /* Адаптив */
 @media (max-width: 1025px) {
   header {
-    border-radius: 0;
     justify-content: space-between;
     padding: 0 20px;
   }
@@ -653,6 +737,27 @@ a {
   .prices__card {
     min-width: 350px;
   }
+
+  /* reviews  */
+  .reviews__cards {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .reviews__card {
+    width: 90%;
+  }
+  
+  .reviews__videos {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+  }
+
+  .reviews__video {
+    width: 40vw;
+  }
+
 }
 
 /* iPad (альбомный режим) */
@@ -734,6 +839,26 @@ a {
     width: 70%;
     height: 250px;
   }
+
+  /* reviews  */
+  .reviews__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews__card {
+    width: 50%;
+  }
+
+  .reviews__videos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews__video {
+    width: 90%;
+  }
 }
 
 
@@ -773,6 +898,25 @@ a {
   .prices__card {
     width: 80%;
   }
+
+  .clients__company {
+    display: grid;
+    grid-template-columns: 50% 50%
+  }
+
+  .clients__company_item {
+    width: 100%;
+  }
+
+  .reviews__cards {
+    gap: 20px;
+  }
+
+  .reviews__card {
+    width: 100%;
+  }
+
+  
 
 }
 
