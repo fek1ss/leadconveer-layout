@@ -646,10 +646,103 @@ a {
   border-radius: 20px;
 }
 
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--ligth-grey);
+  margin: 0 auto;
+}
+
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+  padding: 3rem;
+}
+
+.contacts__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts__con {
+  font-weight: 700;
+  font-style: bold;
+  font-size: 28px;
+}
+
+.contacts__description {
+  text-align: center;
+  color: var(--color-grey);
+}
+
+.contacts__location {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contacts__text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contacts__sub-info {
+  color: var(--color-grey);
+}
 
 
 
+.contacts__img  {
+  height: auto;
+  width: 50%;
+  border-radius: 20px;
+}
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2rem;
+  background-color: var(--dark-grey);
+  border-radius: 20px 20px 0 0;
+  height: 150px;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__private {
+  font-size: 18px;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.footer__sub-info {
+  font-size: 14px;
+  color: var(--color-white);
+
+}
+
+.footer__tags {
+  color: var(--color-grey);
+  font-size: 12px;
+  text-align: center;
+}
 
 /* Адаптив */
 @media (max-width: 1025px) {
@@ -783,6 +876,12 @@ a {
   .clients__company_item {
     width: 90%;
   }
+
+ 
+
+  .contacts__img {
+    height: 50%;
+  }
 }
 
 
@@ -861,6 +960,19 @@ a {
   .reviews__video {
     width: 90%;
   }
+
+  .contacts {
+    flex-direction: column;
+  }
+
+  .contacts__info {
+    width: 100%;
+  }
+
+  .contacts__img {
+    width: 100%;
+  }
+
 }
 
 
