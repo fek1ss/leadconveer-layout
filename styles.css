@@ -735,7 +735,6 @@ footer {
 .footer__sub-info {
   font-size: 14px;
   color: var(--color-white);
-
 }
 
 .footer__tags {
@@ -877,8 +876,6 @@ footer {
     width: 90%;
   }
 
- 
-
   .contacts__img {
     height: 50%;
   }
@@ -971,6 +968,14 @@ footer {
 
   .contacts__img {
     width: 100%;
+  }
+
+  .footer__private {
+    font-size: 15px;
+  }
+
+  .footer__sub-info {
+    font-size: 10px;
   }
 
 }
